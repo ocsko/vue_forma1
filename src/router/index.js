@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import TeamView from '../views/TeamView.vue'
+import DriverView from '../views/DriverView.vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     name: 'Team',
     component: TeamView
   },
+  {
+    path: '/driver',
+    name: 'Driver',
+    component: DriverView
+  }
 ]
 
 const router = createRouter({
