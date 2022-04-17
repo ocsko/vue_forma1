@@ -2,18 +2,16 @@
 <div class="container">
   <div class="row">
 
-      <div class="card col-lg-12 col-md-6 col-sm-12 p-1" v-for="palya in palyak" :key="palya.location">
+      <div class="card col-lg-12 col-md-6 col-sm-12 p-1" v-for="team in teams" :key="team.teamID">
 
         <div class="card-header">
 
-          <h4>A pálya neve: {{palya.location}} </h4>
-          <h1>Körök száma: {{palya.numberOfLaps}}</h1>
-          <h1>A futam kezdete: {{palya.date}} </h1>
-
-
+          <h4>A csapat neve: {{team.name}} </h4>
         </div>
 
         <div class="card-body" >
+            A csapat székhelye: {{team.headquarters}} <br>
+            Alapítási év: {{team.establishment_year}}
         </div>
 
         <div class="card-footer">
@@ -37,13 +35,13 @@ import axios from "axios";
 export default {
   data() {
     return {
-      palyak: [],
+      teams: [],
     };
   },
   mounted() {
-    axios.get("http://localhost:5000/api/Rounds")
+    axios.get("http://localhost:5000/api/Teams")
       .then(response => {
-         this.palyak = response.data
+         this.teams = response.data
       })
 
   }

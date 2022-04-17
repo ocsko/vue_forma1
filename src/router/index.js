@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
+import TeamView from '../views/TeamView.vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/team',
+    name: 'Team',
+    component: TeamView
   },
 ]
 
