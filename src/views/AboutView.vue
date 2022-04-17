@@ -1,40 +1,32 @@
 <template>
-<p> "heló" </p>
+<div class="container">
+  <div class="row">
 
-  <div class="container">
-    <div class="row">
+      <div class="card col-lg-12 col-md-6 col-sm-12 p-1" v-for="palya in palyak" :key="palya.location">
 
-        <div class="card col-lg-12 col-md-6 col-sm-12 p-1" v-for="round in rounds" :key="round.location" >
+        <div class="card-header">
 
-          <div class="card-header">
-
-            <h4>{{round.location}} </h4>
-          
-
-
-          </div>
-
-          <div class="card-body" >
-
-
-          <h4>a </h4>
-
-          </div>
-
-          <div class="card-footer">
-
-          
-
-
-          </div>
-
-
+          <h4>A pálya neve: {{palya.location}} </h4>
+          <h1>Körök száma: {{palya.numberOfLaps}}</h1>
+          <h1>A futam kezdete: {{palya.date}} </h1>
 
 
         </div>
 
-    </div>
+        <div class="card-body" >
+        
+        </div>
+
+        <div class="card-footer">
+        
+
+        </div>
+
+
+      </div>
+
   </div>
+</div>
 
 
 </template>
@@ -46,22 +38,41 @@ import axios from "axios";
 export default {
   data() {
     return {
-      rounds: [],
+      palyak: [],
     };
   },
   mounted() {
     axios.get("http://localhost:5000/api/Rounds")
       .then(response => {
-         this.rounds = response.data
+         this.palyak = response.data
       })
 
   }
 };
 
 </script>
-<style scoped>
+
+<style>
+
+
+
+
 .card-header{
-  background-color: brown !important;
-  
+  background-color: lightblue !important;
 }
+
+
+
+.card-footer{
+  background-color: lightblue !important;
+
+}
+
+.card{
+  margin-bottom: 50px !important;
+}
+
+
+
+
 </style>
