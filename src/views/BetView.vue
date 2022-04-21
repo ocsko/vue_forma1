@@ -4,20 +4,21 @@
     <form @submit.prevent="kuldes">
       <div>
         <label>Kérem írja be a futamot, amelyikre fogadni szeretne:</label>
-        <input @change="change" type="text" placeholder="Futam neve" name="futam" v-model="futam"/>
+        <input @change="change()" type="text" placeholder="Futam neve" name="futam" v-model="futam"/>
       </div>
       <div>
         <label>Kérem írja be a csapat nevét:</label>
-        <input @change="change" type="text" placeholder="Csapat neve" name="csapat" v-model="csapat"/>
+        <input @change="change()" type="text" placeholder="Csapat neve" name="csapat" v-model="csapat"/>
       </div>
       <div>
         <label>Kérem írja be a versenyző nevét:</label>
-        <input @change="change" type="text" placeholder="Versenyző neve" name="versenyzo" v-model="versenyzo"/>
+        <input @change="change()" type="text" placeholder="Versenyző neve" name="versenyzo" v-model="versenyzo"/>
       </div>
       <div>
         <input type="submit" value="Fogadás" :disabled="isDisabled" />
       </div>
-    </div>
+    </form>
+  </div>
 </template>
 
 <script>

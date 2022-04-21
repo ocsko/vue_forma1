@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import About from '../views/AboutView.vue'
 import TeamView from '../views/TeamView.vue'
 import DriverView from '../views/DriverView.vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import BetView from '../views/BetView.vue'
 
 const routes = [
   {
@@ -25,6 +25,11 @@ const routes = [
     path: '/driver',
     name: 'Driver',
     component: DriverView
+  },
+  {
+    path: '/bet',
+    name: 'Bet',
+    component: BetView
   }
 ]
 
