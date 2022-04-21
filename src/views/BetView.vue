@@ -1,5 +1,5 @@
 <template>
-  <h2>Fogadjon futamra!</h2>
+  <h2>Fogadjon!</h2>
   <div>
     <form @submit.prevent="kuldes">
       <div>
