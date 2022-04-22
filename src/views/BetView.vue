@@ -43,7 +43,7 @@ export default {
     },
     kuldes(){
       let url = 'http://localhost:5000/api/Bets'
-      let adat = ''
+      let adat = {race: this.futam, team: this.csapat, driver: this.versenyzo}
       if (this.futam != '' && this.csapat != '' && this.versenyzo != ''){
         axios.post(url, adat)
         .then((resp) => {console.log(resp)})
