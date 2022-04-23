@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
 
-      <div class="card col-lg-12 col-md-6 col-sm-12 p-1" v-for="palya in palyak" :key="palya.location">
+      <div class="card col-lg-12 col-md-6 col-sm-12 p-1" v-for="palya in palyak" :key="palya.roundID">
 
         <div class="card-header">
 

@@ -15,7 +15,7 @@
         </div>
 
         <div class="card-footer">
-        
+        Bajnoki címek: {{team.championship_titles}}
 
         </div>
 
