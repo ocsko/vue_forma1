@@ -55,13 +55,13 @@ export default {
 
 
 .card-header{
-  background-color: lightblue !important;
+  background-color: lightcoral !important;
 }
 
 
 
 .card-footer{
-  background-color: lightblue !important;
+  background-color: lightcoral !important;
 
 }
 
