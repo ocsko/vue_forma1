@@ -6,16 +6,16 @@
 
         <div class="card-header">
 
-          <h4>A csapat neve: {{team.name}} </h4>
+          <h2>A csapat neve: {{team.name}} </h2>
         </div>
 
         <div class="card-body" >
-            A csapat székhelye: {{team.headquarters}} <br>
-            Alapítási év: {{team.establishment_year}}
+            <h3>Csapat székhelye: {{team.headquarters}}</h3>
+            <h3>Alapítási év: {{team.establishment_year}}</h3>
         </div>
 
         <div class="card-footer">
-        Bajnoki címek: {{team.championship_titles}}
+        <h3>Bajnoki címek: {{team.championship_titles}}</h3>
 
         </div>
 

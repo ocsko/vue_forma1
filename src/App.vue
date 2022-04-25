@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
+    <router-link to="/about">Pályák</router-link> |
     <router-link to="/team">Csapatok</router-link> |
     <router-link to="/driver">Versenyzők</router-link> |
     <router-link to="/bet">Fogadás</router-link>

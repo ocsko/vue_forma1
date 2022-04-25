@@ -6,12 +6,12 @@
 
         <div class="card-header">
 
-          <h4>A versenyző neve: {{driver.name}} </h4>
+          <h2>A versenyző neve: {{driver.name}} </h2>
         </div>
 
         <div class="card-body" >
-            A versenyző születési éve: {{driver.birthYear}} <br>
-            Rajtszáma : {{driver.driverNumber}}
+            <h3>A versenyző születési éve: {{driver.birthYear}}</h3>
+            <h3>Rajtszáma : {{driver.driverNumber}}</h3>
         </div>
 
         <div class="card-footer">
